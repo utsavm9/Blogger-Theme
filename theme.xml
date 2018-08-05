@@ -36,7 +36,7 @@
     <link crossorigin='anonymous' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css' integrity='sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb' rel='stylesheet'/>
 
    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'/>
-   <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet" />
+   <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'/>
 
     <b:skin><![CDATA[
         
@@ -924,11 +924,11 @@ margin-bottom: 15px;
 text-align: center
 }
 
-li {
+.itemSpace {
 margin-bottom: 10px !important
 }
 
-ul, ol {
+.listSpace {
 margin-bottom: 20px !important
 }
 
@@ -941,6 +941,11 @@ font-style: oblique
 font-family: 'Sacramento', cursive !important;
 font-weight: 550 !important;
 font-size: 30px !important
+}
+
+
+.Header img {
+    max-width: 300px !important
 }
 
 ]]></b:skin>
@@ -1148,19 +1153,13 @@ body#layout #option h4{width: 100%;}
             <b:section class='pixel-social blue' id='header social widget' maxwidgets='1' name='Top Social Widget' preferred='no' showaddelement='no'>
               <b:widget id='LinkList998' locked='true' title='Social Media Icons' type='LinkList' version='1'>
                 <b:widget-settings>
-                  <b:widget-setting name='link-5'>https://www.facebook.com/themedaddynet/</b:widget-setting>
-                  <b:widget-setting name='link-3'>#</b:widget-setting>
-                  <b:widget-setting name='link-4'>#</b:widget-setting>
-                  <b:widget-setting name='text-1'>pinterest</b:widget-setting>
-                  <b:widget-setting name='text-0'>instagram</b:widget-setting>
-                  <b:widget-setting name='text-3'>gplus</b:widget-setting>
-                  <b:widget-setting name='text-2'>youtube</b:widget-setting>
-                  <b:widget-setting name='text-5'>facebook</b:widget-setting>
-                  <b:widget-setting name='text-4'>twitter</b:widget-setting>
                   <b:widget-setting name='sorting'>NONE</b:widget-setting>
-                  <b:widget-setting name='link-1'>#</b:widget-setting>
-                  <b:widget-setting name='link-2'>#</b:widget-setting>
-                  <b:widget-setting name='link-0'>#</b:widget-setting>
+                  <b:widget-setting name='text-1'>youtube</b:widget-setting>
+                  <b:widget-setting name='link-1'>https://www.youtube.com/utsavmunendra</b:widget-setting>
+                  <b:widget-setting name='text-0'>linkedin</b:widget-setting>
+                  <b:widget-setting name='link-2'>https://plus.google.com/+utsavmunendra</b:widget-setting>
+                  <b:widget-setting name='link-0'>https://in.linkedin.com/in/utsavm9</b:widget-setting>
+                  <b:widget-setting name='text-2'>gplus</b:widget-setting>
                 </b:widget-settings>
                 <b:includable id='main'>
                         <div class='widget-content'>
@@ -1182,15 +1181,11 @@ body#layout #option h4{width: 100%;}
                     <b:section class='pixel-top-menu' id='pixel-top-menu' maxwidgets='1' name='Top Navigation Menu' preferred='no' showaddelement='no'>
                       <b:widget id='LinkList997' locked='true' title='Top Navigation Menu' type='LinkList' version='1'>
                         <b:widget-settings>
-                          <b:widget-setting name='link-3'>/404</b:widget-setting>
                           <b:widget-setting name='sorting'>NONE</b:widget-setting>
-                          <b:widget-setting name='text-1'>About</b:widget-setting>
-                          <b:widget-setting name='link-1'>#</b:widget-setting>
+                          <b:widget-setting name='text-1'>Sitemap</b:widget-setting>
+                          <b:widget-setting name='link-1'>http://utsavm9.blogspot.com/p/blog-page.html</b:widget-setting>
                           <b:widget-setting name='text-0'>Home</b:widget-setting>
-                          <b:widget-setting name='link-2'>#</b:widget-setting>
-                          <b:widget-setting name='text-3'>404</b:widget-setting>
                           <b:widget-setting name='link-0'>/</b:widget-setting>
-                          <b:widget-setting name='text-2'>Contact</b:widget-setting>
                         </b:widget-settings>
                         <b:includable id='main'>
                                 <div class='widget-content'>
@@ -1221,13 +1216,13 @@ body#layout #option h4{width: 100%;}
                 <b:section class='pixel-wide' id='pixel-wide' maxwidgets='1' name='Blog Header' preferred='no' showaddelement='no'>
                   <b:widget id='Header1' locked='true' title='Utsav&apos;s Blog (Header)' type='Header' version='1'>
                     <b:widget-settings>
-                      <b:widget-setting name='displayUrl'>http://3.bp.blogspot.com/-kvAUC1l_MAk/WgVwZdbOWZI/AAAAAAAAA9w/gMbUmOXk4AM6KjtVNbKiAW1YP6Xw90GfQCK4BGAYYCw/s1600/pixel.png</b:widget-setting>
-                      <b:widget-setting name='displayHeight'>226</b:widget-setting>
-                      <b:widget-setting name='sectionWidth'>184</b:widget-setting>
+                      <b:widget-setting name='displayUrl'>https://4.bp.blogspot.com/-feC3FZwETUU/Wv8Z9wTMwFI/AAAAAAAAAtQ/74_iDbWPet4CbFxC6jnMVkF_OBigZRaLwCPcBGAYYCw/s1600/site%2Bheader.png</b:widget-setting>
+                      <b:widget-setting name='displayHeight'>402</b:widget-setting>
+                      <b:widget-setting name='sectionWidth'>800</b:widget-setting>
                       <b:widget-setting name='useImage'>true</b:widget-setting>
                       <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
                       <b:widget-setting name='imagePlacement'>REPLACE</b:widget-setting>
-                      <b:widget-setting name='displayWidth'>598</b:widget-setting>
+                      <b:widget-setting name='displayWidth'>1428</b:widget-setting>
                     </b:widget-settings>
                     <b:includable id='main'>
 
