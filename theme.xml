@@ -69,11 +69,11 @@ blockquote,q{quotes:"" ""}
 sup{vertical-align:super;font-size:smaller}
 code{font-family:'Open Sans', sans-serif;font-size:12px;color:#272727}
 a img{border:none}
-.post-body table {margin:10px 0px;}
-.post-body table td{border-collapse:collapse;border:1px solid #e6e6e6;margin-bottom:1.5em;text-align:center}
-.post-body table{border-collapse:collapse;border:1px solid #e6e6e6;margin-bottom:1.5em}
-.post-body td,th{border-top:1px solid #e6e6e6;vertical-align:top;padding:12px 20px}
-hr{display: block;height: 1px;border: 0;border-top: 1px solid #eee;margin: 1em 0;padding: 0;}
+.post-body table {margin:5px 0px;}
+.post-body table td{border-collapse:collapse;border:1px solid #000;margin-bottom:1.5em;text-align:center}
+.post-body table{border-collapse:collapse;border:1px solid #000;margin-bottom:1.5em}
+.post-body td,th{border-top:1px solid #000;vertical-align:top;padding:12px 20px}
+hr{display: block;height: 1px;border: 0;border-top: 1px solid #000;margin: 1em 0;padding: 0;}
 code{font-family: consolas;border:1px solid #ccc;background:#f7f7f7;padding:2px 6px;}
 .slidebg{background: $(body.background);}
 ol,ul{padding:0;margin:0;text-align:left}
@@ -919,9 +919,25 @@ margin: 15px 0;
 padding: 2em
 } 
 
-h1, h2, h3, h4 {
+.letter {
+background-color: #eeeeee; 
+margin: 15px 0; 
+padding: 2em
+} 
+
+div.letter p {
+margin-bottom: 20px;
+text-align: justify;
+} 
+
+h1, h2, h3{
 margin-bottom: 15px;
 text-align: center
+}
+
+h4{
+margin-bottom: 15px;
+text-align: left
 }
 
 div.myBlock li {
@@ -944,12 +960,21 @@ font-size: 30px !important
 }
 
 .Header img {
-    max-width: 450px !important
+    max-width: 550px !important
 }
 
 .pixel-search-btn {
 display:none
-}]]></b:skin>
+}
+
+th {
+background-color: #ddd
+}
+
+.pixel-advertising {
+display: none !important
+}
+]]></b:skin>
     <b:template-skin>
         <![CDATA[
 body#layout .adminbar{display: block !important;width:280px;float:left;height:100%;position:absolute;top:0px;bottom:0px;left:0px;background: #5d4286;padding-top: 100px;}
@@ -1353,25 +1378,22 @@ body#layout #option h4{width: 100%;}
 
     <div class='hidehome' id='ads-blog'>
         <b:section class='ad-home-widget' id='pixel-advert-1' maxwidgets='1' name='Home Advertisement [Full Width]' preferred='no' showaddelement='no'>
-          <b:widget id='HTML994' locked='false' title='Full width home advertisement' type='HTML' version='1'>
+          <b:widget id='AdSense1' locked='false' title='' type='AdSense'>
             <b:widget-settings>
-              <b:widget-setting name='content'><![CDATA[<a href="http://www.blossomtheme.com" target="_blank"><img style="width:100%;" src="https://2.bp.blogspot.com/-MYa_e2xc3_Y/WgV3kYHsmGI/AAAAAAAAA-M/FWZXZ8oHizg1emaYhz1owih_0gIM2UvcQCLcBGAs/s1600/728%2B3.png"/></a>]]></b:widget-setting>
+              <b:widget-setting name='style.bgcolor'>#eeeeee</b:widget-setting>
+              <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+              <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+              <b:widget-setting name='style.bordercolor'>#2942ee</b:widget-setting>
+              <b:widget-setting name='style.urlcolor'>#2942ee</b:widget-setting>
+              <b:widget-setting name='style.linkcolor'>#000000</b:widget-setting>
+              <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
             </b:widget-settings>
             <b:includable id='main'>
-                    <!-- only display title if it's non-empty -->
-                    <b:if cond='data:title != &quot;&quot;'>
-                        <h2 class='title'>
-                            <data:title/>
-                        </h2>
-                    </b:if>
-                    <div class='widget-content'>
-                        <span>
-                            <data:content/>
-                        </span>
-                    </div>
-
-                    <!--b:include name='quickedit'/-->
-                </b:includable>
+  <div class='widget-content'>
+    <data:adCode/>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
           </b:widget>
         </b:section>
         <div style='clear: both;'/>
@@ -1489,7 +1511,25 @@ body#layout #option h4{width: 100%;}
     <div class='body-row' id='content-wrapper'>
         <div id='main-wrapper'>
             <div class='custwid' id='customwid'>
-                <b:section class='customwidgets' id='customwidget' name='Customized Widgets' preferred='no' showaddelement='yes'/>
+                <b:section class='customwidgets' id='customwidget' name='Customized Widgets' preferred='no' showaddelement='yes'>
+                  <b:widget id='AdSense4' locked='false' title='' type='AdSense'>
+                    <b:widget-settings>
+                      <b:widget-setting name='style.bgcolor'>#eeeeee</b:widget-setting>
+                      <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+                      <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+                      <b:widget-setting name='style.bordercolor'>#2942ee</b:widget-setting>
+                      <b:widget-setting name='style.urlcolor'>#2942ee</b:widget-setting>
+                      <b:widget-setting name='style.linkcolor'>#000000</b:widget-setting>
+                      <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+                    </b:widget-settings>
+                    <b:includable id='main'>
+  <div class='widget-content'>
+    <data:adCode/>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+                  </b:widget>
+                </b:section>
             </div>
 
             <div id='ads-blog'>
@@ -1538,7 +1578,7 @@ body#layout #option h4{width: 100%;}
                   <b:widget-setting name='postsPerAd'>1</b:widget-setting>
                   <b:widget-setting name='showBacklinks'>false</b:widget-setting>
                   <b:widget-setting name='style.bordercolor'>#000000</b:widget-setting>
-                  <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+                  <b:widget-setting name='showInlineAds'>true</b:widget-setting>
                   <b:widget-setting name='showReactions'>false</b:widget-setting>
                 </b:widget-settings>
                 <b:includable id='main' var='top'>
@@ -3030,6 +3070,23 @@ body#layout #option h4{width: 100%;}
                         </b:if>
                     </b:includable>
               </b:widget>
+              <b:widget id='AdSense2' locked='false' title='' type='AdSense'>
+                <b:widget-settings>
+                  <b:widget-setting name='style.bgcolor'>#eeeeee</b:widget-setting>
+                  <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+                  <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+                  <b:widget-setting name='style.bordercolor'>#2942ee</b:widget-setting>
+                  <b:widget-setting name='style.urlcolor'>#2942ee</b:widget-setting>
+                  <b:widget-setting name='style.linkcolor'>#000000</b:widget-setting>
+                  <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main'>
+  <div class='widget-content'>
+    <data:adCode/>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+              </b:widget>
             </b:section>
             <div id='ads-blog'>
                 <b:section class='ad-bottom-widget' id='pixel-advert-3' maxwidgets='1' name='Bottom Ad [Post Page]' preferred='no' showaddelement='no'>
@@ -3104,23 +3161,22 @@ body#layout #option h4{width: 100%;}
     <b:include name='quickedit'/>
   </b:includable>
               </b:widget>
-              <b:widget id='HTML2' locked='false' title='Advertisement' type='HTML' version='1'>
+              <b:widget id='AdSense3' locked='false' title='' type='AdSense'>
                 <b:widget-settings>
-                  <b:widget-setting name='content'><![CDATA[<a href="http://www.blossomtheme.com" target="_blank"><img style="width:100%;" src="https://2.bp.blogspot.com/-NVxIuVUclr4/WgV5GuACJbI/AAAAAAAAA-Y/_2F3SjGqgwgPWvdAEId87UN8DpH1_QNGACLcBGAs/s1600/3200250.png"/></a>]]></b:widget-setting>
+                  <b:widget-setting name='style.bgcolor'>#eeeeee</b:widget-setting>
+                  <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+                  <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+                  <b:widget-setting name='style.bordercolor'>#2942ee</b:widget-setting>
+                  <b:widget-setting name='style.urlcolor'>#2942ee</b:widget-setting>
+                  <b:widget-setting name='style.linkcolor'>#000000</b:widget-setting>
+                  <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                 </b:widget-settings>
                 <b:includable id='main'>
-                        <!-- only display title if it's non-empty -->
-                        <b:if cond='data:title != &quot;&quot;'>
-                            <h2 class='title'>
-                                <data:title/>
-                            </h2>
-                        </b:if>
-                        <div class='widget-content'>
-                            <data:content/>
-                        </div>
-
-                        <!--b:include name='quickedit'/-->
-                    </b:includable>
+  <div class='widget-content'>
+    <data:adCode/>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
               </b:widget>
               <b:widget id='Navbar1' locked='false' title='Navbar' type='Navbar' version='1'>
                 <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
@@ -3353,60 +3409,11 @@ head.appendChild(script);
         <div class='body-row' id='footer-wrapper'>
 
             <div id='pixel-footer-cols'>
-                <b:section class='pixel-fcols-inner pixel-widetize' id='Footer widget(1)' name='Footer Column [1]' preferred='yes'>
-                  <b:widget id='AdSense2' locked='false' title='' type='AdSense'>
-                    <b:widget-settings>
-                      <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-                      <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
-                      <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-                      <b:widget-setting name='style.bordercolor'>#336699</b:widget-setting>
-                      <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
-                      <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
-                      <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-                    </b:widget-settings>
-                    <b:includable id='main'>
-  <div class='widget-content'>
-    <data:adCode/>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-                  </b:widget>
-                </b:section>
+                <b:section class='pixel-fcols-inner pixel-widetize' id='Footer widget(1)' name='Footer Column [1]' preferred='yes'/>
             </div>
 
             <div id='pixel-footer-cols'>
-                <b:section class='pixel-fcols-inner pixel-widetize' id='Footer widget(2)' name='Footer Column [2]' preferred='yes'>
-                  <b:widget id='FollowByEmail1' locked='false' title='Newsletter' type='FollowByEmail' version='1'>
-                    <b:includable id='main'>
-                            <b:if cond='data:title != &quot;&quot;'>
-                                <h2 class='title'>
-                                    <data:title/>
-                                </h2>
-                            </b:if>
-                            <div class='widget-content'>
-                                <div class='follow-by-email-inner'>
-                                    <form action='https://feedburner.google.com/fb/a/mailverify' expr:onsubmit='&quot;window.open(\&quot;https://feedburner.google.com/fb/a/mailverify?uri=&quot; + data:feedPath + &quot;\&quot;, \&quot;popupwindow\&quot;, \&quot;scrollbars=yes,width=550,height=520\&quot;); return true&quot;' method='post' target='popupwindow'>
-                                        <table width='100%'>
-                                            <tr>
-                                                <td>
-                                                    <input class='follow-by-email-address' name='email' placeholder='Email address...' type='text'/>
-                                                </td>
-                                                <td width='64px'>
-                                                    <input class='follow-by-email-submit' type='submit' value='Submit'/>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <input expr:value='data:feedPath' name='uri' type='hidden'/>
-                                        <input name='loc' type='hidden' value='en_US'/>
-                                    </form>
-                                </div>
-                            </div>
-                            <span class='item-control blog-admin'>
-                                <!--b:include name='quickedit'/-->
-                            </span>
-                        </b:includable>
-                  </b:widget>
-                </b:section>
+                <b:section class='pixel-fcols-inner pixel-widetize' id='Footer widget(2)' name='Footer Column [2]' preferred='yes'/>
             </div>
 
             <div id='pixel-footer-cols'>
