@@ -924,11 +924,11 @@ margin-bottom: 15px;
 text-align: center
 }
 
-.itemSpace {
+div.myBlock li {
 margin-bottom: 10px !important
 }
 
-.listSpace {
+div.myBlock ul {
 margin-bottom: 20px !important
 }
 
@@ -1073,10 +1073,7 @@ body#layout #option h4{width: 100%;}
             <b:section class='post-author-widget' id='Postwidegt1' maxwidgets='1' name='Author Description' preferred='no' showaddelement='no'>
               <b:widget id='HTML999' locked='true' title='Author Description' type='HTML' version='1'>
                 <b:widget-settings>
-                  <b:widget-setting name='content'>Hey there, We are Blossom Themes! We are trying to provide you the new way to look and use the blogger
-                            templates. Our designers are working hard and pushing the boundaries of possibilities to widen
-                            the horizon of the regular templates and provide high quality blogger templates to all hardworking
-                            bloggers!</b:widget-setting>
+                  <b:widget-setting name='content'>In an effort to encapsulate my efforts and endeavors that went into many small projects, this website was born. Even I was surprised on the huge quantity of content that I could dig out of the old archives of files on my computer.</b:widget-setting>
                 </b:widget-settings>
                 <b:includable id='main'>
                         <!-- only display title if it's non-empty -->
@@ -1095,29 +1092,6 @@ body#layout #option h4{width: 100%;}
             </b:section>
             <b:section class='post-author-social' id='Postwidegt2' maxwidgets='1' name='Author Social Links' preferred='no' showaddelement='no'>
               <b:widget id='LinkList999' locked='true' title='Author Social Links' type='LinkList' version='1'>
-                <b:widget-settings>
-                  <b:widget-setting name='link-3'>https://twitter.com/ThemeDaddy</b:widget-setting>
-                  <b:widget-setting name='sorting'>NONE</b:widget-setting>
-                  <b:widget-setting name='link-4'>https://www.facebook.com/themedaddynet/</b:widget-setting>
-                  <b:widget-setting name='text-1'>
-                            &lt;i class=&quot;fa fa-vine&quot;&gt;&lt;/i&gt;
-                        </b:widget-setting>
-                  <b:widget-setting name='link-1'>#</b:widget-setting>
-                  <b:widget-setting name='text-0'>
-                            &lt;i class=&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;
-                        </b:widget-setting>
-                  <b:widget-setting name='link-2'>#</b:widget-setting>
-                  <b:widget-setting name='text-3'>
-                            &lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;
-                        </b:widget-setting>
-                  <b:widget-setting name='link-0'>#</b:widget-setting>
-                  <b:widget-setting name='text-2'>
-                            &lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;
-                        </b:widget-setting>
-                  <b:widget-setting name='text-4'>
-                            &lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;
-                        </b:widget-setting>
-                </b:widget-settings>
                 <b:includable id='main'>
 
                         <b:if cond='data:title != &quot;&quot;'>
