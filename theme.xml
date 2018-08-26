@@ -209,7 +209,7 @@ article{padding:0;overflow:hidden}
 .pixel-wide {margin: 0;padding: 0;width: 100%;text-align: center;}
 .headerright{float:right;margin:0;padding:1px 0 0;width:730px}
 .pixel-wide .description span{border-top:1px solid rgba(241,241,241,0.25);padding:5px 0 0}
-.Header img{max-width: 260px;margin:0 auto;}
+.Header img{max-width: 500px;margin:0 auto;}
 
 /*Select Nav*/
 .selectnav{display:none}
@@ -848,6 +848,9 @@ form input[type='text']:hover,#pixel-footer .contact-form-widget textarea:hover{
   .pixel-post-author .content-social-author{display: block;text-align: center;width: 100%;}
   .pixel-post-author .content-social-author ul{text-align: center;display: inline-block;}
   .pixel-post-author .content-social-author > span{clear: both;}
+.Header img {
+    max-width: 400px !important
+}
 }
 @media only screen and (max-width: 480px) {
 .ticker .title,.tk-thumb,.ticker .post-tag{display:none}
@@ -863,10 +866,16 @@ h1.post-title{font-size:22px;margin-bottom:10px}
 .pixel-cwrap{text-align:center}
 .temp-cred{float:none;display:block;clear:both;margin:5px 0 0}
 .pixel-credit_copyright{float:none;display:block;clear:both}
+.Header img {
+    max-width: 300px !important
+}
 }
 @media only screen and (max-width: 360px) {
 .title-404{font-size:150px!important}
 .Header .description p,.showpageOf{display:none}
+.Header img {
+    max-width: 250px !important
+}
 }
 @media only screen and (max-width: 300px) {
 #sidebar-wrapper{display:none}
@@ -884,6 +893,9 @@ h1.post-title{font-size:17px}
 .pixel-pixel-top-menu,.pixel-search-btn{display:none}
 .blsm-post-share li{width:100%}
 .comments .comments-content .comment-header{width:100%;float:none;clear:both;margin:0;padding:0;width:100%;float:none;clear:both;margin:0 0 0 -35px;padding:0}
+.Header img {
+    max-width: 250px !important
+}
 }
 
 #Header1 h1, #Header1 h1 a{font-weight: 800;font-size:40px;color: #222;}
@@ -915,9 +927,9 @@ text-align: justify;
 
 .myBlock {
 background-color: #eeeeee; 
-margin: 15px 0; 
+margin: 0px 0; 
 padding: 2em
-} 
+}
 
 .letter {
 background-color: #eeeeee; 
@@ -941,11 +953,13 @@ text-align: left
 }
 
 div.myBlock li {
-margin-bottom: 10px !important
+margin: 0 0 10px 0 !important;
+padding: 0 0 0 1em !important
 }
 
 div.myBlock ul {
-margin-bottom: 20px !important
+margin: 0 0 30px 0 !important;
+padding: 0 0 0 1.5em !important
 }
 
 .myName {
@@ -959,10 +973,6 @@ font-weight: 550 !important;
 font-size: 30px !important
 }
 
-.Header img {
-    max-width: 550px !important
-}
-
 .pixel-search-btn {
 display:none
 }
@@ -974,6 +984,7 @@ background-color: #ddd
 .pixel-advertising {
 display: none !important
 }
+
 ]]></b:skin>
     <b:template-skin>
         <![CDATA[
@@ -1182,8 +1193,8 @@ body#layout #option h4{width: 100%;}
                       <b:widget id='LinkList997' locked='true' title='Top Navigation Menu' type='LinkList' version='1'>
                         <b:widget-settings>
                           <b:widget-setting name='sorting'>NONE</b:widget-setting>
-                          <b:widget-setting name='text-1'>Sitemap</b:widget-setting>
-                          <b:widget-setting name='link-1'>http://utsavm9.blogspot.com/p/blog-page.html</b:widget-setting>
+                          <b:widget-setting name='text-1'>Theme</b:widget-setting>
+                          <b:widget-setting name='link-1'>http://utsavm9.blogspot.com/2018/08/theme.html</b:widget-setting>
                           <b:widget-setting name='text-0'>Home</b:widget-setting>
                           <b:widget-setting name='link-0'>/</b:widget-setting>
                         </b:widget-settings>
@@ -1377,25 +1388,7 @@ body#layout #option h4{width: 100%;}
 
 
     <div class='hidehome' id='ads-blog'>
-        <b:section class='ad-home-widget' id='pixel-advert-1' maxwidgets='1' name='Home Advertisement [Full Width]' preferred='no' showaddelement='no'>
-          <b:widget id='AdSense1' locked='false' title='' type='AdSense'>
-            <b:widget-settings>
-              <b:widget-setting name='style.bgcolor'>#eeeeee</b:widget-setting>
-              <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
-              <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-              <b:widget-setting name='style.bordercolor'>#2942ee</b:widget-setting>
-              <b:widget-setting name='style.urlcolor'>#2942ee</b:widget-setting>
-              <b:widget-setting name='style.linkcolor'>#000000</b:widget-setting>
-              <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-            </b:widget-settings>
-            <b:includable id='main'>
-  <div class='widget-content'>
-    <data:adCode/>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-          </b:widget>
-        </b:section>
+        <b:section class='ad-home-widget' id='pixel-advert-1' maxwidgets='1' name='Home Advertisement [Full Width]' preferred='no' showaddelement='no'/>
         <div style='clear: both;'/>
     </div>
 
@@ -1511,25 +1504,7 @@ body#layout #option h4{width: 100%;}
     <div class='body-row' id='content-wrapper'>
         <div id='main-wrapper'>
             <div class='custwid' id='customwid'>
-                <b:section class='customwidgets' id='customwidget' name='Customized Widgets' preferred='no' showaddelement='yes'>
-                  <b:widget id='AdSense4' locked='false' title='' type='AdSense'>
-                    <b:widget-settings>
-                      <b:widget-setting name='style.bgcolor'>#eeeeee</b:widget-setting>
-                      <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
-                      <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-                      <b:widget-setting name='style.bordercolor'>#2942ee</b:widget-setting>
-                      <b:widget-setting name='style.urlcolor'>#2942ee</b:widget-setting>
-                      <b:widget-setting name='style.linkcolor'>#000000</b:widget-setting>
-                      <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-                    </b:widget-settings>
-                    <b:includable id='main'>
-  <div class='widget-content'>
-    <data:adCode/>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-                  </b:widget>
-                </b:section>
+                <b:section class='customwidgets' id='customwidget' name='Customized Widgets' preferred='no' showaddelement='yes'/>
             </div>
 
             <div id='ads-blog'>
@@ -1578,7 +1553,7 @@ body#layout #option h4{width: 100%;}
                   <b:widget-setting name='postsPerAd'>1</b:widget-setting>
                   <b:widget-setting name='showBacklinks'>false</b:widget-setting>
                   <b:widget-setting name='style.bordercolor'>#000000</b:widget-setting>
-                  <b:widget-setting name='showInlineAds'>true</b:widget-setting>
+                  <b:widget-setting name='showInlineAds'>false</b:widget-setting>
                   <b:widget-setting name='showReactions'>false</b:widget-setting>
                 </b:widget-settings>
                 <b:includable id='main' var='top'>
@@ -3070,23 +3045,6 @@ body#layout #option h4{width: 100%;}
                         </b:if>
                     </b:includable>
               </b:widget>
-              <b:widget id='AdSense2' locked='false' title='' type='AdSense'>
-                <b:widget-settings>
-                  <b:widget-setting name='style.bgcolor'>#eeeeee</b:widget-setting>
-                  <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
-                  <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-                  <b:widget-setting name='style.bordercolor'>#2942ee</b:widget-setting>
-                  <b:widget-setting name='style.urlcolor'>#2942ee</b:widget-setting>
-                  <b:widget-setting name='style.linkcolor'>#000000</b:widget-setting>
-                  <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-                </b:widget-settings>
-                <b:includable id='main'>
-  <div class='widget-content'>
-    <data:adCode/>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-              </b:widget>
             </b:section>
             <div id='ads-blog'>
                 <b:section class='ad-bottom-widget' id='pixel-advert-3' maxwidgets='1' name='Bottom Ad [Post Page]' preferred='no' showaddelement='no'>
@@ -3160,23 +3118,6 @@ body#layout #option h4{width: 100%;}
 
     <b:include name='quickedit'/>
   </b:includable>
-              </b:widget>
-              <b:widget id='AdSense3' locked='false' title='' type='AdSense'>
-                <b:widget-settings>
-                  <b:widget-setting name='style.bgcolor'>#eeeeee</b:widget-setting>
-                  <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
-                  <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-                  <b:widget-setting name='style.bordercolor'>#2942ee</b:widget-setting>
-                  <b:widget-setting name='style.urlcolor'>#2942ee</b:widget-setting>
-                  <b:widget-setting name='style.linkcolor'>#000000</b:widget-setting>
-                  <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-                </b:widget-settings>
-                <b:includable id='main'>
-  <div class='widget-content'>
-    <data:adCode/>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
               </b:widget>
               <b:widget id='Navbar1' locked='false' title='Navbar' type='Navbar' version='1'>
                 <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
